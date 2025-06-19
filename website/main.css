@@ -13,15 +13,14 @@ html, body {
     text-align: center;
  font-size: 50px;
     color: white;
-    padding-top: 300px; 
+    padding: 300px; 
     background-image: url("צאקי\ מעוצב\ 2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     scroll-behavior: smooth;
-    /* animation: animate__fadeIn 3s;
-  transition: transform 0.3s, box-shadow 0.3s; */
+   
 }
 @keyframes animate__fadeIn {
   from {
