@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaki's house</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <a href="https://wa.me/972507497129" target="_blank" class="whatsapp-button">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+</a>
+
+   <header class="navbar">
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1iXYjgtI9634FfKw-7bYvglsis3pv0ql0?usp=drive_link">Pics</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1iXYjgtI9634FfKw-7bYvglsis3pv0ql0?usp=drive_link">Videos</a></li>
+      <li><a href="#form-talk">Let's Talk</a></li>
+      <li><a href="https://www.instagram.com/noam_zada1?igsh=MjA2eDVmemlrdm94" target="_blank">Instagram</a></li>
+      <li><a href="https://m.soundcloud.com/chaki-901233941?utm_source=facebook&utm_medium=post&utm_campaign=social_sharing" target="_blank">SoundCloud</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="main animate-on-scroll">
+    <h1>CHAKI.</h1>
+<h3>Its all about the music</h3>
+</div>
+
+<div class="about animate-on-scroll">
+
+<p>
+CHAKI is a DJ who brings energy you can feel. <br> A true techno enthusiast with a big passion for music,  
+he lights up dance floors with deep vibes and powerful sets full of character. <br>
+
+Straight out of Tel Aviv, CHAKI lives and breathes techno — from dark underground grooves to emotional buildups that give you chills. <br>
+His sets are raw, real, and unforgettable — no gimmicks, just music that speaks. <br>
+
+🎧 Style: Techno (Melodic / Dark / Peak-time) <br>
+📍 Based in: Tel Aviv — available for gigs across Israel <br>
+🔥 Past shows: Rooftop TLV, private events, and more <br>
+
+“Don’t just hear the music. Feel it. Let it move you.” – CHAKI
+</p>
+
+
+</div>
+<div class="pics animate-on-scroll">
+    <h2>press</h2>
+    <a href="https://drive.google.com/drive/folders/1iXYjgtI9634FfKw-7bYvglsis3pv0ql0?usp=drive_link" target="_blank">
+  <button class="pics-btn">VIDEOS</button>
+  </a>
+  <a href="https://drive.google.com/drive/folders/1iXYjgtI9634FfKw-7bYvglsis3pv0ql0?usp=drive_link" target="_blank">
+  <button class="pics-btn">PHOTOS</button>
+  </a>
+   
+</div>
+
+<div class="talk animate-on-scroll">
+    <h3>Let's talk</h3>
+    <p>Want to book CHAKI for your next event? <br>
+    Have a question or just want to say hi? <br>
+<form id="form-talk" action="register" method="post" class="form-talk">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="3" required></textarea>
+    <br>
+    <button type="submit">Send</button>
+</form>
+</div>
+<div class="thx-erea">
+    
+</div>
+
+    <footer class="site-footer">
+      <p>© by - assaf azran</p>
+      
+    </footer>
+<script src="server.js"></script>
+<script>
+ const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active'); // מסיר את האנימציה כשיוצא
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+  observer.observe(el);
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+ background-image: url("צאקי\ מעוצב\ 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 60px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #0ff;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.back {
+  margin-top: 20px;
+}
+
+.back-btn {
+  background-color: transparent;
+  color: #0ff;
+  border: 2px solid #0ff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #0ff;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff;
+}
+
+
+/* אנימציה בכניסה */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.active {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* ריספונסיביות למסכי מובייל */
+@media (max-width: 600px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  body {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}

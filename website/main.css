@@ -1,0 +1,390 @@
+body{
+    font-family: Sans-serif	Arial;
+    background-color: black;
+}
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main{
+    text-align: center;
+ font-size: 50px;
+    color: white;
+    padding-top: 300px; 
+    background-image: url("צאקי\ מעוצב\ 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    scroll-behavior: smooth;
+    /* animation: animate__fadeIn 3s;
+  transition: transform 0.3s, box-shadow 0.3s; */
+}
+@keyframes animate__fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }
+  /* מצב התחלתי */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* כשמופעלת האנימציה */
+.animate-on-scroll.active {
+  animation: animate__fadeIn 1s ease forwards;
+}
+
+
+.about{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    padding-top: 50px; 
+    background-image: url("bio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    /* animation: animate__fadeIn 3s;
+  transition: transform 0.3s, box-shadow 0.3s; */
+}
+.about h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    
+}
+
+.about p{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+   /* margin: 100px; */
+     background: rgba(0, 0, 0, 0.6); /* שחור חצי שקוף */
+  backdrop-filter: blur(1px); /* אפקט זכוכית */
+  box-shadow: 0 0 15px rgba(48, 48, 48, 0.6);
+    border-radius: 10px; /* פינות מעוגלות */
+    transition: all 0.4s ease;
+}
+.about p:hover{
+    color: rgb(204, 51, 204);
+    box-shadow: 0 0 10px rgb(174, 51, 204);
+   transform: scale(1.05); /* הגדלה קלה */
+}
+
+.pics{
+    background-image: url("Good\ luck\ sitting\ still\ through\ this.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    color: white;
+}
+
+
+
+.talk {
+
+    padding: 20px;
+    text-align: center;
+    background-image: url("עיצוב\ ללא\ שם\ \(2\).png");
+       background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.talk h3 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.talk p {
+  color: #ccc;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.form-talk {
+  background-color: black;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+ 
+    text-align: center;
+  display: inline-block;
+  /* box-shadow: #222 0px 0px 20px 0px; */
+}
+
+.form-talk label {
+  display: flex;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+}
+
+.form-talk input,
+.form-talk textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color:black;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+}
+
+.form-talk input:focus,
+.form-talk textarea:focus {
+  outline: none;
+  border-color: #555;
+  background-color: #2a2a2a;
+}
+
+.form-talk button {
+ background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+.form-talk button:hover {
+  background-color: #666;
+}
+
+.pics-btn {
+  background-color: #111;
+  color: #eee;
+  border: 2px solid #333;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.pics-btn:hover {
+  background-color: #222;
+  color: #0ff;
+  border-color: #0ff;
+  box-shadow: 0 0 15px #0ff88c;
+  transform: scale(1.05);
+}
+.pics {
+  background-color: #000; /* רקע שחור חלק */
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s ease;
+}
+
+.pics h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0ff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.2s ease;
+  box-shadow: #0ff88c 0px 0px 15px 0px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 32px;
+  height: 32px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85); 
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+  z-index: 9999; 
+  padding: 10px 0;
+  backdrop-filter: blur(6px); 
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #0ff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.nav-list a:hover {
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 0 10px #0ff;
+}
+.site-footer {
+  background-color: #000;
+  color: rgb(8, 81, 81);
+  text-align: left;
+  padding: 20px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+}
+
+.site-footer p {
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #0ff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  
+  }
+
+  .main,
+  .about,
+  .pics,
+  .talk {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 40px 10px;
+    height: auto;
+  }
+
+  .main h1 {
+    font-size: 2rem;
+  }
+
+  .main h2 {
+    font-size: 1.2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    margin: 50px 10px;
+    padding: 20px;
+  }
+
+  .form-talk {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .pics h2 {
+    font-size: 1.5rem;
+  }
+
+  .back-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+    .whatsapp-button {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-button img {
+    width: 26px;
+    height: 26px;
+  }
+
+}
