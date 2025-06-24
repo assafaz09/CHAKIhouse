@@ -18,7 +18,7 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     scroll-behavior: smooth;
    
 }
@@ -365,16 +365,15 @@ main {
     padding: 20px;
     width: 80%;
   }
-
-  .navbar {
-    flex-direction: row;
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    padding: 10px;
   }
 
-  .nav-list {
-    flex-direction: row;
-    gap: 10px;
+  .nav-list a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
   }
 
   .pics h2 {
