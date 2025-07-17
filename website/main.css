@@ -1,26 +1,25 @@
-body{
-    font-family: Sans-serif	Arial;
-    background-color: black;
+body {
+  font-family: Sans-serif Arial;
+  background-color: black;
 }
 
-
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.main{
-    text-align: center;
- font-size: 50px;
-    color: white;
-    padding: 300px; 
-    background-image: url("CHAKI.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    scroll-behavior: smooth;
-   
+.main {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 300px;
+  background-image: url("CHAKI.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 @keyframes animate__fadeIn {
   from {
@@ -31,84 +30,78 @@ html, body {
     opacity: 1;
     transform: translateY(0);
   }
-  }
+}
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(-20px);
 }
 
-
 .animate-on-scroll.active {
   animation: animate__fadeIn 1s ease forwards;
 }
 
-
-.about{
-    text-align: left;
-    font-size: 20px;
-    color: white;
-    padding-top: 50px; 
-    background-image: url("bio.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    /* animation: animate__fadeIn 3s;
+.about {
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  padding-top: 50px;
+  background-image: url("bio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  /* animation: animate__fadeIn 3s;
   transition: transform 0.3s, box-shadow 0.3s; */
 }
-.about h2{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    
+.about h2 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
-.about p{
-    font-size: 25px;
-    color: white;
-    line-height: 1.6;
-    text-align: left;
-    padding: 20px;
-    margin-top: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
-   /* margin: 100px; */
-     background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(1px); 
+.about p {
+  font-size: 25px;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+  padding: 20px;
+  margin-top: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* margin: 100px; */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
   box-shadow: 0 0 15px rgba(48, 48, 48, 0.6);
-    border-radius: 10px;
-    transition: all 0.4s ease;
+  border-radius: 10px;
+  transition: all 0.4s ease;
 }
-.about p:hover{
-    color: rgb(204, 51, 204);
-    box-shadow: 0 0 10px rgb(174, 51, 204);
-   transform: scale(1.05); 
-}
-
-.pics{
-    background-image: url("chakiGallery.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    justify-content: center;
-    color: white;
+.about p:hover {
+  color: rgb(204, 51, 204);
+  box-shadow: 0 0 10px rgb(174, 51, 204);
+  transform: scale(1.05);
 }
 
+.pics {
+  background-image: url("chakiGallery.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  justify-content: center;
+  color: white;
+}
 
 .talk {
-
-    padding: 20px;
-    text-align: center;
-    background-image: url("עיצוב\ ללא\ שם\ \(2\).png");
-       background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  padding: 20px;
+  text-align: center;
+  background-image: url("עיצוב\ ללא\ שם\ \(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .talk h3 {
@@ -124,16 +117,13 @@ html, body {
 }
 
 .form-talk {
-  
   padding: 40px;
- 
-  
+
   width: 100%;
   max-width: 500px;
- 
-    text-align: center;
+
+  text-align: center;
   display: inline-block;
- 
 }
 
 .form-talk label {
@@ -143,7 +133,6 @@ html, body {
   color: #0a0a0a;
   color: #fff;
   text-align: center;
-
 }
 
 .form-talk input,
@@ -153,11 +142,11 @@ html, body {
   margin-bottom: 20px;
   border: 1px solid #333;
   border-radius: 8px;
-  background-color:rgba(0, 0, 0, 0.141);
+  background-color: rgba(0, 0, 0, 0.141);
   color: #fff;
   font-size: 1em;
   text-align: center;
-    box-shadow: #222 0px 0px 20px 0px;
+  box-shadow: #222 0px 0px 20px 0px;
 }
 
 .form-talk input:focus,
@@ -168,7 +157,7 @@ html, body {
 }
 
 .form-talk button {
- background-color: #000;
+  background-color: #000;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -194,7 +183,7 @@ html, body {
   margin: 10px;
   transition: all 0.3s ease;
   letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .pics-btn:hover {
@@ -205,7 +194,7 @@ html, body {
   transform: scale(1.05);
 }
 .pics {
-  background-color: #000; 
+  background-color: #000;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -231,14 +220,14 @@ html, body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366; 
+  background-color: #25d366;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 999;
   transition: transform 0.2s ease;
   box-shadow: #0ff88c 0px 0px 15px 0px;
@@ -257,11 +246,11 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85); 
+  background-color: rgba(0, 0, 0, 0.85);
   box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
-  z-index: 9999; 
+  z-index: 9999;
   padding: 10px 0;
-  backdrop-filter: blur(6px); 
+  backdrop-filter: blur(6px);
 }
 
 .nav-list {
@@ -305,7 +294,8 @@ html, body {
   text-shadow: 0 0 5px #0ff;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -332,7 +322,6 @@ main {
   transition: opacity 0.5s ease;
 }
 
-
 .popup-content {
   background: #000;
   color: #0ff;
@@ -342,7 +331,6 @@ main {
   text-align: center;
   box-shadow: 0 0 20px #0ff;
   position: relative;
-  
 }
 
 .close-btn {
@@ -358,7 +346,7 @@ main {
   opacity: 0;
   pointer-events: none;
 }
-.soonBtn{
+.soonBtn {
   background-color: rgba(0, 255, 255, 0.556);
   color: #000;
   border: none;
@@ -374,14 +362,11 @@ main {
   box-shadow: 0 0 20px #0ff;
 }
 
-
 @media (max-width: 431px) {
   body {
     font-size: 14px;
-  
   }
 
-  
   .about,
   .pics,
   .talk {
@@ -392,9 +377,9 @@ main {
     padding: 40px 10px;
     height: auto;
   }
-  .main{
+  .main {
     margin-top: 80px;
-    padding: 100px; 
+    padding: 100px;
     background-image: url("CHAKI.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -402,21 +387,17 @@ main {
     height: auto;
   }
 
-   h1 {
+  h1 {
     font-size: 2px;
-text-align: center;
-display: flex;
-flex-wrap: wrap;
-    padding: 50px;
-  
-
-    
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .main h2 {
     font-size: 1.2rem;
   }
-  .main h3{
+  .main h3 {
     font-size: 20px;
   }
 
@@ -450,7 +431,7 @@ flex-wrap: wrap;
     font-size: 0.9rem;
   }
 
-    .whatsapp-button {
+  .whatsapp-button {
     bottom: 10px;
     right: 10px;
     width: 50px;
@@ -461,27 +442,23 @@ flex-wrap: wrap;
     width: 26px;
     height: 26px;
   }
-
 }
 @media (max-width: 768px) {
   .main {
-    
     background-size: cover;
     background-position: center;
   }
-   h1{
-display: flex;
-flex-direction: column;
+  h1 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    
-
   }
 
   .about p {
     font-size: 1.2rem;
-  
+
     padding: 15px;
   }
 
@@ -499,5 +476,4 @@ flex-direction: column;
     padding: 10px;
     font-size: 0.9rem;
   }
-  
 }
