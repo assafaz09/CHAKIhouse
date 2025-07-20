@@ -278,11 +278,7 @@ h1 {
   border-radius: 6px;
 }
 
-.nav-list a:hover {
-  background-color: #222;
-  color: #fff;
-  box-shadow: 0 0 10px #0ff;
-}
+
 .site-footer {
   background-color: #000;
   color: rgb(8, 81, 81);
