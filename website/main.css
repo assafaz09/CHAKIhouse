@@ -435,14 +435,15 @@ main {
     width: 80%;
   }
   .nav-list {
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
   }
 
   .nav-list a {
     font-size: 0.9rem;
     padding: 6px 10px;
+    padding-left: 10px;
   }
 
   .pics h2 {
